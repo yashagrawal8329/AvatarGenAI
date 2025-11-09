@@ -21,8 +21,26 @@ This project demonstrates understanding of generative AI, Hugging Face Diffusers
 - **Language**: Python 3.9+.
 
 ## Phases
-- **Phase 1: Basic Avatar Generation** - Core text-to-image generation with Gradio UI.
-- **Phase 2: Advanced Features** - Face-guided generation, random variations, and bonus enhancements.
+- **Phase 2: Core Avatar Generator** -1. Text-to-Avatar Pipeline
+○ Use a fine-tuned model (e.g., stablediffusionapi/realistic-vision-v51 or Lykon/DreamShaper)
+○ Add negative prompt to avoid blurry/low-quality outputs.
+○ Allow control over:
+■ Steps (30–50)
+■ CFG Scale (7–12)
+■ Seed (for reproducibility)
+2. Avatar Style Consistency
+○ Enforce cartoon/anime/realistic style via prompt templates.
+○ Example template: "A [style] avatar of [description], clean background, centered, high quality, detailed face"
+3. Random Variation Button
+○ Generate 4 variations with same prompt, different seeds.
+
+- **Phase 3: UI Development** -
+Build a user interface using Gradio:
+● Text input for prompt
+● Dropdown for style: Realistic, Anime, Cartoon, Cyberpunk
+● (Optional) File upload for reference face
+● Generate button → Grid of 4 avatars
+● Download button for selected avatar
 
 ## Setup Instructions
 1. **Prerequisites**:
@@ -30,16 +48,11 @@ This project demonstrates understanding of generative AI, Hugging Face Diffusers
    - No local setup needed—everything runs in the cloud.
 
 2. **Run in Google Colab**:
-   - Open the Colab notebook: [AvatarGen Colab Link](https://colab.research.google.com/drive/your-notebook-id) (replace with your actual link).
+   - Open the Colab notebook: [AvatarGen Colab Link][(https://colab.research.google.com/drive/your-notebook-id) ](https://colab.research.google.com/drive/1dhZIXNGKQ8xIPUvM1tocVkhjKrGD99Qt?usp=sharing).
    - Click "Runtime" > "Run all" to install dependencies and launch the app.
    - The Gradio interface will appear in the output cell or as a public link.
 
-3. **Alternative Local Setup** (if needed):
-   - Clone the repository: `git clone https://github.com/your-username/avatar-gen.git`
-   - Install dependencies: `pip install torch diffusers gradio opencv-python insightface`
-   - Run: `python app.py`
-
-4. **Usage**:
+3. **Usage**:
    - Input a text prompt (e.g., "A cyberpunk woman with blue hair").
    - Select a style from the dropdown.
    - (Optional) Upload a face image.
@@ -50,7 +63,7 @@ This project demonstrates understanding of generative AI, Hugging Face Diffusers
 Here are visual examples, with a focus on Phase 1 (basic generation):
 
 ### Phase 1: Basic Avatar Generation
-- ![Colab Setup](images/phase1_colab_setup.png)  
+- ![Colab Setup](Phase1code.png)  
   *Google Colab interface with code cells for installing dependencies and running the app.*
 
 - ![Gradio Interface](images/phase1_gradio_interface.png)  
