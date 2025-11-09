@@ -57,7 +57,7 @@ Choose at least 2:
    - No local setup needed—everything runs in the cloud.
 
 2. **Run in Google Colab**:
-   - Open the Colab notebook: **PHASE 2:** [AvatarGen Colab Link][(https://colab.research.google.com/drive/your-notebook-id) ](https://colab.research.google.com/drive/1dhZIXNGKQ8xIPUvM1tocVkhjKrGD99Qt?usp=sharing).
+   - Open the Colab notebook: **PHASE 2:** [AvatarGen Colab Link][[(https://colab.research.google.com/drive/your-notebook-id) ](https://colab.research.google.com/drive/1dhZIXNGKQ8xIPUvM1tocVkhjKrGD99Qt?usp=sharing)](https://colab.research.google.com/drive/106dbeJKo6kHAz18ZmiXheiQAP9EH0o_v?usp=sharing).
    - Click "Runtime" > "Run all" to install dependencies and launch the app.
    - The Gradio interface will appear in the output cell or as a public link.
 
