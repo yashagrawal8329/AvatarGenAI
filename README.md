@@ -150,7 +150,7 @@ Choose at least 2:
 
  **2. Random Avatar Generator (no input → surprise avatar)**
 **Run in Google Colab**:
-   - Open the Colab notebook: **PHASE 3:**
+   - Open the Colab notebook: **PHASE 4:**
       **Run in Google Colab**:https://colab.research.google.com/drive/10tlpLAFuJ8-LcIYcLcUwwCGyLdURpUNK?usp=sharing
      ![Colab Setup](P41.png)  
   *Google Colab interface with code cells for installing dependencies and running the app.*
@@ -158,7 +158,17 @@ Choose at least 2:
 - ![Generated Avatars](P42.png)  
   Example output from Phase 4:  avatar variations from a simple text prompt .
   
-  - ![Generated Avatars](P43.png) 
+  - ![Generated Avatars](P43.png)
+
+**4. Background Remover (using rembg)**
+   - Open the Colab notebook: **PHASE 4:**
+      **Run in Google Colab**: https://colab.research.google.com/drive/1PBcp9_s-GjUPd3OKKaOlmZChx8XRB9S8?usp=sharing
+   ![Colab Setup](P51.png)  
+  *Google Colab interface with code cells for installing dependencies and running the app.*
+
+- ![Generated Avatars](P52.png)  
+  Example output from Phase 4:  avatar variations from a simple text prompt .
+     
 
 
 ## Model Used & Why
