@@ -21,6 +21,13 @@ This project demonstrates understanding of generative AI, Hugging Face Diffusers
 - **Language**: Python 3.9+.
 
 ## Phases
+**Phase 1: Research & Setup**
+1. Study Stable Diffusion and how it generates images from text.
+2. Set up environment (Colab, local GPU, or cloud).
+3. Run a basic text-to-image pipeline using Hugging Face Diffusers.
+Deliverable: A Jupyter notebook demonstrating text-to-avatar generation with 3 sample prompts
+
+
 - **Phase 2: Core Avatar Generator** -
 - 1. Text-to-Avatar Pipeline
   ○ Use a fine-tuned model (e.g., stablediffusionapi/realistic-vision-v51 or Lykon/DreamShaper)
@@ -71,7 +78,7 @@ Choose at least 2:
 ## Screenshots
 Here are visual examples, with a focus on Phase 1 (basic generation):
 
-### Phase 2: Core Avatar Generator
+### Phase 1: Core (basic generation)
 - ![Colab Setup](Phase1code.png)  
   *Google Colab interface with code cells for installing dependencies and running the app.*
 
@@ -84,6 +91,31 @@ Here are visual examples, with a focus on Phase 1 (basic generation):
   ![Generated Avatars](P1OT3.png)  
   *Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."*
 
+
+### Phase 2: Core Avatar Generator
+
+Phase 2: Core Avatar Generator
+Implement the following features:
+1. Text-to-Avatar Pipeline
+○ Use a fine-tuned model (e.g., stablediffusionapi/realistic-vision-v51 or Lykon/DreamShaper)
+○ Add negative prompt to avoid blurry/low-quality outputs.
+○ Allow control over:
+■ Steps (30–50)
+■ CFG Scale (7–12)
+■ Seed (for reproducibility)
+2. Avatar Style Consistency
+○ Enforce cartoon/anime/realistic style via prompt templates.
+○ Example template: "A [style] avatar of [description], clean background, centered, high quality, detailed face"
+3. Random Variation Button
+○ Generate 4 variations with same prompt, different seeds.
+Deliverable: Working Python script (avatar_gen.py) with a function generate_avatar(prompt, style, num_variants=4)
+
+![Colab Setup](Phase1code.png)  
+  *Google Colab interface with code cells for installing dependencies and running the app.*
+
+- ![Generated Avatars](PAOUT1.png)  
+  Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."
+
 ## Model Used & Why
 - **Primary Model**: Stable Diffusion v1.5 (via Hugging Face Diffusers) for text-to-image generation. We chose this because it's open-source, efficient, and excels at creating diverse, high-quality images from prompts. For realism, we optionally use fine-tuned variants like `stablediffusionapi/realistic-vision-v51`.
 - **Why?**: Stable Diffusion provides flexibility with prompt engineering, negative prompts, and parameters like CFG scale (7-12) and steps (30-50) for controlling output quality. It's lightweight compared to GANs and integrates well with Gradio for a user-friendly app. For face-guided features, we added IP-Adapter to blend user faces seamlessly without full fine-tuning.
@@ -95,7 +127,7 @@ Here are visual examples, with a focus on Phase 1 (basic generation):
 - **UI Responsiveness**: Gradio's grid display for multiple images took time to optimize for fast generation (<10 seconds per image).
 - **Deployment**: Dockerizing the app involved handling dependencies and GPU access, which was tricky on non-GPU systems.
 - 
-### Phase 2: Core Avatar Generator
+
 
 ## Demo Video
 Watch a 5-minute demo here: [YouTube Link](https://youtu.be/your-demo-video) (unlisted).
