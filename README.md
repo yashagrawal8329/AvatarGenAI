@@ -66,13 +66,14 @@ Here are visual examples, with a focus on Phase 1 (basic generation):
 - ![Colab Setup](Phase1code.png)  
   *Google Colab interface with code cells for installing dependencies and running the app.*
 
-- ![Gradio Interface](images/phase1_gradio_interface.png)  
-  *Basic Gradio UI in Phase 1: Input prompt field, style dropdown, and generate button.*
+- ![Generated Avatars](P1OUT1.png)  
+  Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."
 
-- ![Generated Avatars](images/phase1_generated_avatars.png)  
-  *Example output from Phase 1: 4 avatar variations from a simple text prompt like "A smiling cartoon character."*
-
-*(Note: Replace `images/` with your actual folder path. Upload screenshots as described in the previous guide. For Phase 2, add more images later.)*
+- ![Generated Avatars](P1OUT2.PNG)  
+  *Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."*
+  
+  ![Generated Avatars](P1OT3.PNG)  
+  *Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."*
 
 ## Model Used & Why
 - **Primary Model**: Stable Diffusion v1.5 (via Hugging Face Diffusers) for text-to-image generation. We chose this because it's open-source, efficient, and excels at creating diverse, high-quality images from prompts. For realism, we optionally use fine-tuned variants like `stablediffusionapi/realistic-vision-v51`.
