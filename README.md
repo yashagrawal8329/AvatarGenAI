@@ -135,11 +135,14 @@ Deliverable: app.py with Gradio interface (shareable link via launch(share=True)
 
 gradio : https://b6e78b37f718b38011.gradio.live/
 
-![Colab Setup](phase2.png)  
+![Colab Setup](p3.png)  
   *Google Colab interface with code cells for installing dependencies and running the app.*
 
-- ![Generated Avatars](phase2out.png)  
-  Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character.
+- ![Generated Avatars](p31.png)  
+  Example output from Phase 3: 4 avatar variations from a simple text prompt like "A smiling cartoon character.
+
+- ![Generated Avatars](p32.png)  
+  Example output from Phase 3: 4 avatar variations from a simple text prompt like "A smiling cartoon character.
 
 
 ## Model Used & Why
