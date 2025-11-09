@@ -62,17 +62,17 @@ Build a user interface using Gradio:
 ## Screenshots
 Here are visual examples, with a focus on Phase 1 (basic generation):
 
-### Phase 1: Basic Avatar Generation
+### Phase 2: Core Avatar Generator
 - ![Colab Setup](Phase1code.png)  
   *Google Colab interface with code cells for installing dependencies and running the app.*
 
-- ![Generated Avatars](P1OUT1.png)  
+- ![Generated Avatars](PAOUT1.png)  
   Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."
 
-- ![Generated Avatars](P1OUT2.PNG)  
+- ![Generated Avatars](P1OUT2.png)  
   *Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."*
   
-  ![Generated Avatars](P1OT3.PNG)  
+  ![Generated Avatars](P1OT3.png)  
   *Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."*
 
 ## Model Used & Why
