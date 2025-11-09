@@ -110,10 +110,14 @@ Implement the following features:
 ○ Generate 4 variations with same prompt, different seeds.
 Deliverable: Working Python script (avatar_gen.py) with a function generate_avatar(prompt, style, num_variants=4)
 
-![Colab Setup](Phase1code.png)  
+**Run in Google Colab**:
+   - Open the Colab notebook: **PHASE 2:**
+      **Run in Google Colab**:https://colab.research.google.com/drive/1FKnHLdWqEHFGjmaKz8Nxx9PwRcobNcwW?usp=sharing
+   - 
+![Colab Setup](phase2.png)  
   *Google Colab interface with code cells for installing dependencies and running the app.*
 
-- ![Generated Avatars](PAOUT1.png)  
+- ![Generated Avatars](phase2out.png)  
   Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."
 
 ## Model Used & Why
