@@ -113,12 +113,34 @@ Deliverable: Working Python script (avatar_gen.py) with a function generate_avat
 **Run in Google Colab**:
    - Open the Colab notebook: **PHASE 2:**
       **Run in Google Colab**:https://colab.research.google.com/drive/1FKnHLdWqEHFGjmaKz8Nxx9PwRcobNcwW?usp=sharing
-   - 
+     
 ![Colab Setup](phase2.png)  
   *Google Colab interface with code cells for installing dependencies and running the app.*
 
 - ![Generated Avatars](phase2out.png)  
   Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character."
+
+**Phase 3: UI Development**
+Build a user interface using Gradio:
+● Text input for prompt
+● Dropdown for style: Realistic, Anime, Cartoon, Cyberpunk
+● (Optional) File upload for reference face
+● Generate button → Grid of 4 avatars
+● Download button for selected avatar
+Deliverable: app.py with Gradio interface (shareable link via launch(share=True))
+
+**Run in Google Colab**:
+   - Open the Colab notebook: **PHASE 3:**
+      **Run in Google Colab**:[https://colab.research.google.com/drive/1FKnHLdWqEHFGjmaKz8Nxx9PwRcobNcwW?usp=sharing](https://colab.research.google.com/drive/1EwVNp7J_xoKXku0jpm_-S2C6CE6p8jAC?usp=sharing)
+
+gradio : https://b6e78b37f718b38011.gradio.live/
+
+![Colab Setup](phase2.png)  
+  *Google Colab interface with code cells for installing dependencies and running the app.*
+
+- ![Generated Avatars](phase2out.png)  
+  Example output from Phase 2: 3 avatar variations from a simple text prompt like "A smiling cartoon character.
+
 
 ## Model Used & Why
 - **Primary Model**: Stable Diffusion v1.5 (via Hugging Face Diffusers) for text-to-image generation. We chose this because it's open-source, efficient, and excels at creating diverse, high-quality images from prompts. For realism, we optionally use fine-tuned variants like `stablediffusionapi/realistic-vision-v51`.
