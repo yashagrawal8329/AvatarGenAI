@@ -21,18 +21,19 @@ This project demonstrates understanding of generative AI, Hugging Face Diffusers
 - **Language**: Python 3.9+.
 
 ## Phases
-- **Phase 2: Core Avatar Generator** -1. Text-to-Avatar Pipeline
-○ Use a fine-tuned model (e.g., stablediffusionapi/realistic-vision-v51 or Lykon/DreamShaper)
-○ Add negative prompt to avoid blurry/low-quality outputs.
-○ Allow control over:
-■ Steps (30–50)
-■ CFG Scale (7–12)
-■ Seed (for reproducibility)
-2. Avatar Style Consistency
-○ Enforce cartoon/anime/realistic style via prompt templates.
-○ Example template: "A [style] avatar of [description], clean background, centered, high quality, detailed face"
-3. Random Variation Button
-○ Generate 4 variations with same prompt, different seeds.
+- **Phase 2: Core Avatar Generator** -
+- 1. Text-to-Avatar Pipeline
+  ○ Use a fine-tuned model (e.g., stablediffusionapi/realistic-vision-v51 or Lykon/DreamShaper)
+   ○ Add negative prompt to avoid blurry/low-quality outputs.
+   ○ Allow control over:
+   ■ Steps (30–50)
+   ■ CFG Scale (7–12)
+   ■ Seed (for reproducibility)
+   2. Avatar Style Consistency
+   ○ Enforce cartoon/anime/realistic style via prompt templates.
+   ○ Example template: "A [style] avatar of [description], clean background, centered, high quality, detailed face"
+   3. Random Variation Button
+   ○ Generate 4 variations with same prompt, different seeds.
 
 - **Phase 3: UI Development** -
 Build a user interface using Gradio:
@@ -42,13 +43,21 @@ Build a user interface using Gradio:
 ● Generate button → Grid of 4 avatars
 ● Download button for selected avatar
 
+**Phase 4: Bonus Features** -
+Choose at least 2:
+1. Face-Guided Generation (using IP-Adapter or ControlNet)
+**2. Random Avatar Generator (no input → surprise avatar)**
+3. Prompt Auto-Enhancer (use LLM to improve user prompts)
+**4. Background Remover (using rembg)**
+5. Dockerfile to containerize the app
+
 ## Setup Instructions
 1. **Prerequisites**:
    - A Google account for Colab (recommended for GPU access).
    - No local setup needed—everything runs in the cloud.
 
 2. **Run in Google Colab**:
-   - Open the Colab notebook: [AvatarGen Colab Link][(https://colab.research.google.com/drive/your-notebook-id) ](https://colab.research.google.com/drive/1dhZIXNGKQ8xIPUvM1tocVkhjKrGD99Qt?usp=sharing).
+   - Open the Colab notebook: **PHASE 2:** [AvatarGen Colab Link][(https://colab.research.google.com/drive/your-notebook-id) ](https://colab.research.google.com/drive/1dhZIXNGKQ8xIPUvM1tocVkhjKrGD99Qt?usp=sharing).
    - Click "Runtime" > "Run all" to install dependencies and launch the app.
    - The Gradio interface will appear in the output cell or as a public link.
 
@@ -85,6 +94,8 @@ Here are visual examples, with a focus on Phase 1 (basic generation):
 - **Face Integration**: Aligning uploaded faces with generated avatars required experimenting with insightface and ControlNet, leading to occasional alignment issues.
 - **UI Responsiveness**: Gradio's grid display for multiple images took time to optimize for fast generation (<10 seconds per image).
 - **Deployment**: Dockerizing the app involved handling dependencies and GPU access, which was tricky on non-GPU systems.
+- 
+### Phase 2: Core Avatar Generator
 
 ## Demo Video
 Watch a 5-minute demo here: [YouTube Link](https://youtu.be/your-demo-video) (unlisted).
