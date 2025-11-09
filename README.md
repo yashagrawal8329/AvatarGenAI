@@ -143,6 +143,22 @@ gradio : https://b6e78b37f718b38011.gradio.live/
 
 - ![Generated Avatars](p32.png)  
   Example output from Phase 3: 4 avatar variations from a simple text prompt like "A smiling cartoon character.
+**Phase 4: Bonus Features** -
+Choose at least 2:
+**2. Random Avatar Generator (no input → surprise avatar)**
+**4. Background Remover (using rembg)**
+
+ **2. Random Avatar Generator (no input → surprise avatar)**
+**Run in Google Colab**:
+   - Open the Colab notebook: **PHASE 3:**
+      **Run in Google Colab**:https://colab.research.google.com/drive/10tlpLAFuJ8-LcIYcLcUwwCGyLdURpUNK?usp=sharing
+     ![Colab Setup](P41.png)  
+  *Google Colab interface with code cells for installing dependencies and running the app.*
+
+- ![Generated Avatars](P42.png)  
+  Example output from Phase 4:  avatar variations from a simple text prompt .
+  
+  - ![Generated Avatars](P43.png) 
 
 
 ## Model Used & Why
