@@ -1,5 +1,3 @@
-# AvatarGenAI
-AI-Based Avatar Creation Assignment for Intern
 # AvatarGen: AI-Powered Avatar Generator
 
 ## Project Overview
@@ -12,49 +10,56 @@ Key features include:
 - Downloadable PNG outputs.
 - Bonus features: Face-guided generation, random avatar generator, prompt auto-enhancer, and background remover.
 
-This project demonstrates understanding of generative AI, Hugging Face Diffusers, and UI development with Gradio.
+This project demonstrates understanding of generative AI, Hugging Face Diffusers, and UI development with Gradio. **Note**: The entire project is implemented and runnable in Google Colab for easy access to free GPUs.
 
 ## Tech Stack
 - **AI Model**: Stable Diffusion (v1.5 or SDXL), with options for ControlNet or IP-Adapter.
 - **Framework**: PyTorch, Hugging Face Diffusers.
 - **UI**: Gradio (for web interface).
 - **Face Processing**: OpenCV, insightface (for optional face detection).
-- **Deployment**: Docker, Hugging Face Spaces, or localhost.
+- **Deployment**: Google Colab (primary), Docker, or Hugging Face Spaces.
 - **Language**: Python 3.9+.
+
+## Phases
+- **Phase 1: Basic Avatar Generation** - Core text-to-image generation with Gradio UI.
+- **Phase 2: Advanced Features** - Face-guided generation, random variations, and bonus enhancements.
 
 ## Setup Instructions
 1. **Prerequisites**:
-   - Python 3.9+ installed.
-   - GPU recommended (or use Google Colab for free GPU access).
-   - Install dependencies: Run `pip install torch diffusers gradio opencv-python insightface` (add more as needed for bonus features).
+   - A Google account for Colab (recommended for GPU access).
+   - No local setup needed—everything runs in the cloud.
 
-2. **Clone the Repository**:
-3. 
-3. **Run the Application**:
-- For local setup: Execute `python app.py` and open the Gradio interface in your browser.
-- For Hugging Face Spaces: Upload the code to a new Space and deploy.
-- For Docker: Build and run using the provided Dockerfile (if implemented).
+2. **Run in Google Colab**:
+   - Open the Colab notebook: [AvatarGen Colab Link](https://colab.research.google.com/drive/your-notebook-id) (replace with your actual link).
+   - Click "Runtime" > "Run all" to install dependencies and launch the app.
+   - The Gradio interface will appear in the output cell or as a public link.
+
+3. **Alternative Local Setup** (if needed):
+   - Clone the repository: `git clone https://github.com/your-username/avatar-gen.git`
+   - Install dependencies: `pip install torch diffusers gradio opencv-python insightface`
+   - Run: `python app.py`
 
 4. **Usage**:
-- Input a text prompt (e.g., "A cyberpunk woman with blue hair").
-- Select a style from the dropdown.
-- (Optional) Upload a face image.
-- Click "Generate" to create 4 variations.
-- Download your favorite avatar.
+   - Input a text prompt (e.g., "A cyberpunk woman with blue hair").
+   - Select a style from the dropdown.
+   - (Optional) Upload a face image.
+   - Click "Generate" to create 4 variations.
+   - Download your favorite avatar.
 
 ## Screenshots
-Here are some visual examples of the application in action:
+Here are visual examples, with a focus on Phase 1 (basic generation):
 
-- ![App Interface](images/app_interface.png)  
-*Main Gradio interface with input fields and generation options.*
+### Phase 1: Basic Avatar Generation
+- ![Colab Setup](images/phase1_colab_setup.png)  
+  *Google Colab interface with code cells for installing dependencies and running the app.*
 
-- ![Generated Avatars](images/generated_avatars.png)  
-*Example output: 4 avatar variations from a text prompt.*
+- ![Gradio Interface](images/phase1_gradio_interface.png)  
+  *Basic Gradio UI in Phase 1: Input prompt field, style dropdown, and generate button.*
 
-- ![Face-Guided Example](images/face_guided.png)  
-*Avatar generated with an uploaded selfie for facial structure.*
+- ![Generated Avatars](images/phase1_generated_avatars.png)  
+  *Example output from Phase 1: 4 avatar variations from a simple text prompt like "A smiling cartoon character."*
 
-*(Note: Replace `images/` with your actual folder path. Upload screenshots as described in the previous guide.)*
+*(Note: Replace `images/` with your actual folder path. Upload screenshots as described in the previous guide. For Phase 2, add more images later.)*
 
 ## Model Used & Why
 - **Primary Model**: Stable Diffusion v1.5 (via Hugging Face Diffusers) for text-to-image generation. We chose this because it's open-source, efficient, and excels at creating diverse, high-quality images from prompts. For realism, we optionally use fine-tuned variants like `stablediffusionapi/realistic-vision-v51`.
@@ -88,9 +93,3 @@ Watch a 5-minute demo here: [YouTube Link](https://youtu.be/your-demo-video) (un
 - [Hugging Face Diffusers](https://huggingface.co/docs/diffusers/index)
 - [Gradio Docs](https://gradio.app/docs/)
 - [Stable Diffusion WebUI Colab](https://colab.research.google.com/github/AUTOMATIC1111/stable-diffusion-webui/blob/master/launch.py)
-
-## Contributing
-Feel free to fork and submit pull requests. For issues, open a GitHub issue.
-
-## License
-This project is for educational purposes. See LICENSE for details.
